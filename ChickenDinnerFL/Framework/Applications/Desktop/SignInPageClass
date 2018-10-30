@@ -1,0 +1,20 @@
+   using System;
+namespace ChickenDinnerFL.Framework.Applications.Desktop
+{
+    public class SignInPageClass
+    {
+      this.driver = driver;
+      
+        public SignInPageClass()
+        {
+            //stubbed
+        }
+       
+       public void sign_in_enter_email(String email){
+            driver.findElement(By.id("email-address").sendkeys(email);
+          }
+       public void sign_in_enter_password(String password){
+          driver.findElement(By.id("password").sendkeys(password);
+    }
+}
+  
