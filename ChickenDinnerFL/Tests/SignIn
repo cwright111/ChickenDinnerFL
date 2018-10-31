@@ -1,0 +1,26 @@
+using ChickenDinnerFL.Framework.Applications.Desktop
+using System
+
+
+namespace ChickenDinnerFL.Tests
+ 
+ public class SignIn
+    {
+       ChromeDriver driver = new ChromeDriver();
+       
+        public void onSignin()
+        {
+                driver.Navigate().GoToUrl("https://qa1.hsn.com");
+                driver.Manage().Window.Maximize();
+                Assert.IsTrue(driver.Title.Contains("HSN"));
+             }
+         
+        public void sign_in_enter_email(){
+            new SignInPageClass(driver).sign_in_enter_email();
+            }     
+        public void sign_in_enter_password(){
+            new SignInPageClass(driver).sign_in_enter_password();
+
+        }
+    }
+}
