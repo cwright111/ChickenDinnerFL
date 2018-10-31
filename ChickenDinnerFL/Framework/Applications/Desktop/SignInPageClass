@@ -17,4 +17,3 @@ namespace ChickenDinnerFL.Framework.Applications.Desktop
           driver.findElement(By.id("password").sendkeys(password);
     }
 }
-  
